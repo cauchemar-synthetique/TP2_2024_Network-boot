@@ -8,7 +8,7 @@ Pour ce faire, je vais d'abord lancer une VM :
 
 ```ruby
 Vagrant.configure("2") do |config|
-  config.vm.box = "generic/rocky9"
+  config.vm.box = "ed/rocky9"
   config.vm.hostname = "pxe.tp2.efrei"
   config.vm.network "private_network", ip: "10.1.1.2"
   config.vm.provider "virtualbox" do |vb|
